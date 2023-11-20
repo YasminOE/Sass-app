@@ -1,6 +1,6 @@
 import getRawBody from "raw-body";
 import { stripe } from "src/pricing/utils/stripe";
-import { supabase } from "../../../supabase";
+import { supabase, supabaseServer } from "../../../supabase";
 
 // help stripe able to construct the event
 export const config = {
@@ -80,11 +80,12 @@ async function updateSubscription(event){
     //   user_metadata: newProfile,
     // });
 
-    await supabase.auth.admin.createUser({
+     await supabaseServer.auth.admin.createUser({
       email,
       email_confirm: true,
-      metadata: newProfile,
+      user_metadata: newProfile,
     });
+ 
     
   }
 } 
