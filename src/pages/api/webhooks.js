@@ -48,6 +48,7 @@ export default async function handler(req, res) {
   }
 }
 
+// handle user subscription creation in supabase profile table
 async function updateSubscription(event){
   const subscription = event.data.object;
   const stripe_customer_id = subscription.customer;
@@ -89,5 +90,15 @@ async function updateSubscription(event){
     
   }
 } 
+
+// handle user subscription cancelation
 async function deleteSubscription(event){
+  const subscription = event.data.object;
+  const stripe_customer_id = subscription.customer;
+  const subscription_status = subscription.status;
+  const deletedSubscription = {
+    subscription_status,
+    price: null,
+  }
+  await supabase.from('profile').update(deletedSubscription).eq('stripe_customer_id', stripe_customer_id);
 }
