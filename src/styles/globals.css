@@ -86,7 +86,7 @@ h1.h1-smaller {
   color: #e5dbdc;
 }
 .bg-blue {
-  background-color: #69baff;
+  background-color: #a5d5fe;
   color: #000;
 }
 .bg-navy {
@@ -1015,7 +1015,16 @@ article.product-card footer > * {
   white-space: nowrap;
   text-overflow: ellipsis;
 }
+.pill.feature {
+  background-color: #f4f4f0;
+  color: #ccc;
+}
 
+h3:has(.pill.feature) {
+  display: flex;
+  align-items: center;
+  gap: 0.5em;
+}
 .stack {
   padding: 0;
   display: grid;
