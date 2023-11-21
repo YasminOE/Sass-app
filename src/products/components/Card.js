@@ -2,11 +2,12 @@ import Link from "next/link";
 
 export default function ProductCard({ product }) {
   return (
-    <article className="product-card">
-      <Link href={`/products/${product.slug}`}>
-        <img src={`/assets/${product.slug}.png`} alt={product.name} />
+    <article className="product-card" >
+      <Link href={`/products/${product.slug}`} className="product-img-link">
+        <img src={`/assets/${product.slug}.png`} alt={product.name}/>
       </Link>
-      <header>
+      <div>
+        <header>
         <p>{product.name}</p>
       </header>
       <footer>
@@ -18,7 +19,9 @@ export default function ProductCard({ product }) {
           {product.category}
         </span>
       </div>
-      </footer>
+      </footer> 
+      </div>
+     
     </article>
   )
 }
