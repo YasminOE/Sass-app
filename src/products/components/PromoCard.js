@@ -6,13 +6,14 @@ export default function PromoCard() {
       <div>
         <div>
           <h4>Get Instant Access</h4>
-          <p style={{fontSize: '1rem'}}>
-            Access this product plus dozens of others when you subscribe.
+          <p style={{fontSize: '1.3rem'}}>
+          {/* <p style={{fontSize: '1rem'}}> */}
+            Access this newsletter plus dozens of others when you subscribe.
           </p>
         </div>
       </div>
       <Link href="/pricing" className="primary button">
-        Purchase
+        Subscribe
       </Link>
     </section>
   )

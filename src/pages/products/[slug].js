@@ -33,7 +33,7 @@ export default function ProductPage({product}) {
   console.log(productContent)
 
   return (
-    <section className="product-section">
+    <section className="product-section ">
       <article className="product">
         <div className="product-wrap">
           {/* condition to handle the download url */}
@@ -48,7 +48,7 @@ export default function ProductPage({product}) {
             ) :
 
             (
-              <Image width={1000} height={300} src={`/assets/${product.slug}.png`} alt={product.name}/>
+              <Image width={1000} height={300} src={`/assets/${product.slug}.png`} alt={product.name} className="inOne-product-image"/>
             )
           }
         </div>

@@ -4,11 +4,11 @@ export default function SubscriberCard() {
   return (
     <section>
       <div>
-        <h4>See all products</h4>
+        <h4>See all newsletters</h4>
         <p style={{ fontSize:'1rem' }}>Go back to see the entire catalogue. </p>
       </div>
       <Link href='/products' className="primary button black">
-        Explore products
+        Explore newsletter
       </Link>
     </section>
   )
