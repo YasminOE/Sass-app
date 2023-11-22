@@ -16,7 +16,7 @@ export default function SuccessPage() {
             // layout='fill' objectFit='contain'
           />
           <h1>You&apos;re in!</h1>
-          <p>Thanks for creating a PaperBoy account.<br /> Ready to get started?</p>
+          <p>Thank you for creating a Paperboy account.<br /> Ready to get started?</p>
           {/* <p>Thanks for creating a PaperBoy account. <br /> You can now access everything. Ready to get started?</p> */}
           <Link href="/login" className="large-button">
             <div className="large-button-text">
