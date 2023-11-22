@@ -24,7 +24,7 @@ export default function AppLayout({children, key}) {
     initial={{scaleY: 3}}
     animate={{scaleY: 0}}
     exit={{scaleY: 2}}
-    transition={{ duration: 4, ease: [0.22, 1, 0.36, 1]}}
+    transition={{ duration: 1.6, ease: [0.22, 1, 0.36, 1], delay: 1}}
     // transition={{ duration: 1, ease: [0.7, 0, 0.3, 1]}}
     key='slide-in'
   >
@@ -34,11 +34,11 @@ export default function AppLayout({children, key}) {
 
   <motion.div
         className='slide-out'
-        initial={{scaleY: 2}}
+        initial={{scaleY: 3}}
         animate={{scaleY: 0}}
         exit={{scaleY: 0}}
         // transition={{ duration: 2.6, ease: [0.7, 0, 0.3, 1]}}
-        transition={{ duration: 4, ease: [0.22, 1, 0.36, 1]}}
+        transition={{ duration: 1, ease: [0.22, 1, 0.36, 1]}}
         key='slide-out'
   >
      

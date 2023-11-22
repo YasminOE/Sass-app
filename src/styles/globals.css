@@ -1236,7 +1236,7 @@ input:checked + .slider:before {
   background-color: #e5dbdc;
   /* background-color: #000; */
   transform-origin: top;
-  /* z-index: 100; */
+  z-index: 11;
 }
 
 .slide-out {
@@ -1248,6 +1248,6 @@ input:checked + .slider:before {
   /* background-color: #e5dbdc; */
   background-color: #000;
   transform-origin: bottom;
-  /* z-index: 101; */
+  z-index: 11;
   /* border-radius: 30%; */
 }
