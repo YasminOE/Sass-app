@@ -1,7 +1,7 @@
 import { useRouter } from 'next/router'
 import Meta from 'src/core/components/Meta'
 import Navbar from "src/core/components/Navbar"
-import {motion , AnimatePresence} from "framer-motion"
+import {motion} from "framer-motion"
 import Logo from '/src/core/components/Logo.js'
 
 const hideNavbarPages = ['/success', '/login']
@@ -12,7 +12,6 @@ export default function AppLayout({children, key}) {
   const hideNavbar = hideNavbarPages.includes(router.asPath)
   return <>
 
-    {/* <AnimatePresence mood="wait"> */}
      <motion.div key={key}
   
      >   
@@ -26,7 +25,7 @@ export default function AppLayout({children, key}) {
     initial={{top: 0}}
     animate={{top: "100vh"}}
     exit={{top: 0}}
-    transition={{ duration: 2.6, ease: [0.22, 1, 0.36, 1], delay: 1.5}}
+    transition={{ duration: 1.6, ease: [0.22, 1, 0.36, 1], delay: 1.5}}
     key='slide-in'
   >
     
@@ -37,16 +36,20 @@ export default function AppLayout({children, key}) {
 
   <motion.div
         className='slide-out'
-        initial={{scaleY: 3}}
+        initial={{scaleY: 1}}
         animate={{scaleY: 0}}
         exit={{scaleY: 0}}
-        transition={{ duration: 2, ease: [0.22, 1, 0.36, 1]}}
+        transition={{ duration: 1, ease: [0.22, 1, 0.36, 1]}}
+
+        // add content animation
+        // initial={{top: 0}}
+        // animate={{top: "100vh"}}
+        // exit={{top: 0}}
+        // transition={{ duration: 1, ease: [0.22, 1, 0.36, 1]}}
         key='slide-out'
   >
-     
+    
   </motion.div>
-
-  {/* </AnimatePresence> */}
 
   </>
 }
