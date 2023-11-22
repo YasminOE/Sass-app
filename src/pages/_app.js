@@ -32,11 +32,12 @@ export default function App({ Component, pageProps }) {
   supabaseClient={supabaseClient}
     initialSession={pageProps.initialSession}
   >
-     <motion.div key={router.pathname}>
-    <AppLayout >
+     {/* <motion.div key={router.pathname}> */}
+    {/* <AppLayout > */}
+    <AppLayout key={router.pathname} >
       <Component {...pageProps} />
     </AppLayout>
-  </motion.div>
+  {/* </motion.div> */}
 
 
 
