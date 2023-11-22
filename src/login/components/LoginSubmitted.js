@@ -2,7 +2,7 @@ export default function LoginSubmitted({ submitted }) {
   return(
     <div className="content-grid home-hero">
       <h1>Link sent!</h1>
-      <p>Check your email ({submitted}) to complete logging in</p>
+      <p>Please check the email sent to ({submitted}) to complete logging in with OTP link.</p>
     </div>
   )
 }
