@@ -780,21 +780,27 @@ input {
   gap: 0.0625rem;
   overflow: hidden;
 }
-
+.product-wrap {
+  overflow: hidden;
+}
 .product-wrap .inOne-product-image {
   width: 100%;
   overflow: hidden;
+  will-change: transform;
+}
+
+.download-link:hover img.inOne-product-image:hover,
+.product-wrap:has(.download-link) img.inOne-product-image:hover {
+  transform: scale(1.02);
+  transform-origin: 0 50%;
+  transition: all 1.16s cubic-bezier(0.4, 0.01, 0.14, 0.99);
+  overflow: hidden;
 }
 .product-wrap:has(.download-link) img.inOne-product-image {
-  /* opacity: 0.6; */
-  /* filter: blur(5px); */
-  /* filter: grayscale(100%); */
-  /* Webkit for chrome and safari */
   mask-repeat: no-repeat;
   -webkit-mask-repeat: no-repeat;
   mask-image: url("../../public/assets/blur-bg.png");
   -webkit-mask-image: url("../../public/assets/blur-bg.png");
-  /* height: inherit; */
 }
 article.product-card {
   margin-bottom: 5em;
@@ -917,8 +923,14 @@ article.product-card {
   transition: all 0.14s ease-out;
   display: grid;
   grid-template-rows: auto 1fr auto;
+  overflow: hidden;
 }
 
+.product-card:hover img {
+  transform: scale(1.02);
+  transform-origin: 0 50%;
+  transition: transform 1.16s cubic-bezier(0.4, 0.01, 0.14, 0.99);
+}
 article.product-card,
 article.product {
   background-color: #fff;
@@ -1218,7 +1230,7 @@ input:checked + .slider:before {
   position: absolute;
   left: 50%;
   top: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, 50%);
   z-index: 11;
 }
 

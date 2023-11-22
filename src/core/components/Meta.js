@@ -1,10 +1,10 @@
 export default function Meta() {
   return (
     <>
-      <title>Saas Web App</title>
+      <title>Paperboy</title>
       <meta
         name="description"
-        content="All the most epic things on the internet, all in one place."
+        content="Monthly newsletter reads, made simple!"
       />
     </>
   );
