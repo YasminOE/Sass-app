@@ -65,43 +65,6 @@ export default function ProductsPage({products}) {
       <div className="container">
         {/* <div className="section-intro"> */}
           <div className="marquee">
-            {/* <div className="marquee-inner">
-              <div className="marquee-part">
-          <h1 className="h1-smaller">Monthly</h1>
-          <h1 className="h1-smaller">Newsletters</h1>
-          <h1 className="h1-smaller arrow">→</h1>
-              </div>
-              <div className="marquee-part">
-              <h1 className="h1-smaller">Monthly</h1>
-          <h1 className="h1-smaller">Newsletters</h1>
-          <h1 className="h1-smaller arrow">→</h1>
-              </div>
-              <div className="marquee-part">
-              <h1 className="h1-smaller">Monthly</h1>
-          <h1 className="h1-smaller">Newsletters</h1>
-          <h1 className="h1-smaller arrow">→</h1>
-              </div>
-              <div className="marquee-part">
-              <h1 className="h1-smaller">Monthly</h1>
-          <h1 className="h1-smaller">Newsletters</h1>
-          <h1 className="h1-smaller arrow">→</h1>
-              </div>
-              <div className="marquee-part">
-              <h1 className="h1-smaller">Monthly</h1>
-          <h1 className="h1-smaller">Newsletters</h1>
-          <h1 className="h1-smaller arrow">→</h1>
-              </div>
-              <div className="marquee-part">
-              <h1 className="h1-smaller">Monthly</h1>
-          <h1 className="h1-smaller">Newsletters</h1>
-          <h1 className="h1-smaller arrow">→</h1>
-              </div>
-              <div className="marquee-part">
-              <h1 className="h1-smaller">Monthly</h1>
-          <h1 className="h1-smaller">Newsletters</h1>
-          <h1 className="h1-smaller arrow">→</h1>
-              </div>
-            </div> */}
             <div className="marquee-inner">
         {Array.from({ length: 9 }, (_, index) => (
           <div className="marquee-part" key={index}>
