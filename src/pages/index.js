@@ -1,10 +1,13 @@
 import Image from "next/image";
 import Link from "next/link";
 import hero from '../../public/assets/hero.png';
+import Page from "../core/components/page";
 
 
 export default function HomePage() {
-  return <div className="grid-halves h-screen-navbar">
+  return (
+    <Page>
+  <div className="grid-halves h-screen-navbar">
     <div className="border-right">
       <div className="column-padding">
         <div className="tablet-centered">
@@ -28,4 +31,7 @@ export default function HomePage() {
       </div>
     </div>
   </div>
+    </Page>
+  )
+
 }

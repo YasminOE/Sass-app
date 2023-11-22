@@ -5,12 +5,10 @@ import { createBrowserClient } from "@supabase/ssr"
 import { SessionContextProvider } from '@supabase/auth-helpers-react'
 import "src/styles/globals.css";
 import AppLayout from "../core/layouts/App";
-import { useState } from 'react';
+import { useRouter } from "next/router";
 
 export default function App({ Component, pageProps }) {
-   // Create a new supabase browser client on every first render.
-  //  const [supabaseClient] = useState(() => createBrowserClient())
-
+  const router = useRouter()
    // Check if environment variables are defined before using the non-null assertion operator
    const supabaseURL = process.env.NEXT_PUBLIC_SUPABASE_URL;
    const supabaseAnonKey = process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY;
@@ -31,7 +29,7 @@ export default function App({ Component, pageProps }) {
     initialSession={pageProps.initialSession}
   >
   
-    <AppLayout>
+    <AppLayout key={router.pathname} >
       <Component {...pageProps} />
     </AppLayout>
   </SessionContextProvider>
