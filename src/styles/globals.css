@@ -1234,7 +1234,6 @@ input:checked + .slider:before {
   width: 100%;
   height: 100vh;
   background-color: #e5dbdc;
-  /* background-color: #000; */
   transform-origin: top;
   z-index: 11;
 }
@@ -1249,5 +1248,4 @@ input:checked + .slider:before {
   background-color: #000;
   transform-origin: bottom;
   z-index: 11;
-  /* border-radius: 30%; */
 }

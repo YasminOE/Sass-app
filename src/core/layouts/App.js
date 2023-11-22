@@ -14,10 +14,7 @@ export default function AppLayout({children, key}) {
 
     {/* <AnimatePresence mood="wait"> */}
      <motion.div key={key}
-         initial={{opacity: 0}}
-         animate={{opacity: 1}}
-         exit={{opacity:0}}
-         transition={{ duration: 1.5, ease: [0.22, 1, 0.36, 1], delay: 1.5}}
+  
      >   
      <Meta />
     {hideNavbar ? null : <Navbar/>}
@@ -26,22 +23,16 @@ export default function AppLayout({children, key}) {
 
   <motion.div
     className='slide-in'
-    initial={{scaleY: 3}}
-    animate={{scaleY: 0}}
-    exit={{scaleY: 2}}
-    transition={{ duration: 2.6, ease: [0.22, 1, 0.36, 1], delay: 1}}
-    // transition={{ duration: 1, ease: [0.7, 0, 0.3, 1]}}
+    initial={{top: 0}}
+    animate={{top: "100vh"}}
+    exit={{top: 0}}
+    transition={{ duration: 2.6, ease: [0.22, 1, 0.36, 1], delay: 1.5}}
     key='slide-in'
   >
     
- <motion.div className="centered"
-      initial={{opacity: 1}}
-      animate={{opacity: 0}}
-      exit={{opacity:0}}
-      // transition={{ duration: 1.5, ease: [0.22, 1, 0.36, 1]}}
- >
+ <div className="centered">
   <Logo/>
- </motion.div>
+ </div>
   </motion.div>
 
   <motion.div
@@ -49,8 +40,7 @@ export default function AppLayout({children, key}) {
         initial={{scaleY: 3}}
         animate={{scaleY: 0}}
         exit={{scaleY: 0}}
-        // transition={{ duration: 2.6, ease: [0.7, 0, 0.3, 1]}}
-        transition={{ duration: 1, ease: [0.22, 1, 0.36, 1]}}
+        transition={{ duration: 2, ease: [0.22, 1, 0.36, 1]}}
         key='slide-out'
   >
      
