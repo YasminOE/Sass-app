@@ -38,7 +38,7 @@ export default function Navbar() {
      { session ? (
       <div className="nav-menu">
       <Link href="/products" className="nav-link white">
-        <div>Products</div>
+        <div>Newsletters</div>
       </Link>
       
       <a onClick={onManageBilling} className="nav-link border-left white">

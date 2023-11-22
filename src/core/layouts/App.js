@@ -13,17 +13,16 @@ export default function AppLayout({children, key}) {
   return <>
 
      <motion.div key={key}
-  
-     >   
+>   
      <Meta />
     {hideNavbar ? null : <Navbar/>}
     {children}
-  </motion.div>
+
 
   <motion.div
     className='slide-in'
     initial={{top: 0}}
-    animate={{top: "100vh"}}
+    animate={{top: "-100vh"}}
     exit={{top: 0}}
     transition={{ duration: 1.6, ease: [0.22, 1, 0.36, 1], delay: 1.5}}
     key='slide-in'
@@ -50,6 +49,11 @@ export default function AppLayout({children, key}) {
   >
     
   </motion.div>
+  </motion.div>
+
+
+
+ 
 
   </>
 }
