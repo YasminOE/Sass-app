@@ -12,19 +12,22 @@ export default function LoginPage() {
   const [submitted, setSubmitted] = useState('')
   return (
     <div className="grid-halves h-screen">
-      <div className="border-right bg-offwhite">
+      <div className="border-right ">
         <div className="column-padding">
           <div className="tablet-centered">
             <Link href="/" className="logo-container">
-              <Logo style={{ width: 150 }}/>
+              <Logo style={{ width: 210 }}/>
             </Link>
             { submitted ? <LoginSubmitted submitted={submitted} /> :  <LoginForm setSubmitted={setSubmitted}/>}
      
           </div>
         </div>
       </div>
-      <div className="bg-navy border-right">
+      <div className="border-right">
+      {/* <div className="bg-offwhite border-right"> */}
+      <div className="column-padding">
         <Image src={login} alt="Login page image" className="callout-image" />
+      </div>
       </div>
     </div>
   )
