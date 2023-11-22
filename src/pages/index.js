@@ -12,7 +12,7 @@ export default function HomePage() {
       <div className="column-padding">
         <div className="tablet-centered">
           <div className="content-grid home-hero">
-            <h1>Monthly newsletters, <br/> made simple.</h1>
+            <h1>Newsletters, <br/> made simple.</h1>
             <p className="section-subtitle">Today&apos;s headlines make today&apos;s head lines.</p>
             <Link href="/products" className="large-button">
               <div className="large-button-text">Explore more</div>

@@ -15,6 +15,7 @@ export default function Navbar() {
   // handle user's sign out
   function signOut(){
     supabaseClient.auth.signOut();
+    
   }
 
   // handle user redirect to stripe billing portal
@@ -38,17 +39,17 @@ export default function Navbar() {
      { session ? (
       <div className="nav-menu">
       <Link href="/products" className="nav-link white">
-        <div>Newsletters</div>
+        <div>News</div>
       </Link>
       
       <a onClick={onManageBilling} className="nav-link border-left white">
         <div>Billing</div>
       </a>
-      <div onClick={signOut} className="nav-link black">
+      <Link href="/" onClick={signOut} className="nav-link black">
         <div>
           Sign out
         </div>
-      </div>
+      </Link>
     </div>
      ) : 
       (
