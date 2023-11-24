@@ -19,7 +19,6 @@ export default function Navbar() {
   }
 
   // handle user redirect to stripe billing portal
-  // TODO: Fix the billing portal redirect -> the problem is within pages/api/manage-billing.js
   async function onManageBilling(){
     const response= await fetch(`${SITE_URL}/api/manage-billing`);
     const data = await response.json();
@@ -42,9 +41,11 @@ export default function Navbar() {
         <div>News</div>
       </Link>
       
-      <a onClick={onManageBilling} className="nav-link border-left white">
+    {/* TODO: Fix the billing portal redirect -> the problem is within pages/api/manage-billing.js */}
+    
+      {/* <a onClick={onManageBilling} className="nav-link border-left white">
         <div>Billing</div>
-      </a>
+      </a> */}
       <Link href="/" onClick={signOut} className="nav-link black">
         <div>
           Sign out
