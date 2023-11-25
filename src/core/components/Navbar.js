@@ -10,8 +10,8 @@ export default function Navbar() {
 
   // call the supabase in a client component from _app.js
   const supabaseClient =  useSupabaseClient();
-  console.log(supabaseClient)
-
+  // console.log(supabaseClient)
+  
   // handle user's sign out
   function signOut(){
     supabaseClient.auth.signOut();
