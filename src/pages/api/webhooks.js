@@ -23,7 +23,7 @@ export default async function handler(req, res) {
     event = stripe.webhooks.constructEvent(rawBody, signature, signingSecret);
 
   } catch (error){
-    console.log('Webhook signature verification failed.');
+    // console.log('Webhook signature verification failed.');
     return res.status(400).end();
     // return res.status(400).send(`Webhook Error: ${error.message}`);
   }
@@ -39,11 +39,11 @@ export default async function handler(req, res) {
         await deleteSubscription(event);
         break;
     }
-    console.log(event);
+    // console.log(event);
     res.send({ success: true });
 
   } catch(error) {
-    console.log("Error processing webhook", error);
+    // console.log("Error processing webhook", error);
     res.send({ success: false });
   }
 }

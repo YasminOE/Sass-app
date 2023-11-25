@@ -22,7 +22,7 @@ export default function LoginForm({ setSubmitted }) {
     if(error){
       setError(error.message)
       setLoading(false)
-      console.log(error)
+      // console.log(error)
     }else{
       setError('');
       setLoading(false);
