@@ -21,7 +21,7 @@ export default function HomePage() {
                       <div className="content-grid home-hero">
 
                         <h1>Hi there,</h1>
-                        <p className="section-subtitle">Explore your monthly digest:  Where updates become your headlines in the world of today.</p>
+                        <p className="section-subtitle" style={{ fontSize:'1.3rem' }}>Explore your monthly digest:  Where updates become your headlines in the world of today.</p>
                         <Link href="/products" className="large-button">
                         <div className="large-button-text">Explore more</div>
                       </Link>

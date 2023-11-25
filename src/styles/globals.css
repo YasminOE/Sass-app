@@ -1244,7 +1244,7 @@ input:checked + .slider:before {
   top: 0;
   left: 0;
   width: 100%;
-  height: 100vh;
+  height: 100%;
   background-color: #e5dbdc;
   transform-origin: top;
   z-index: 11;
@@ -1255,7 +1255,7 @@ input:checked + .slider:before {
   top: 0;
   left: 0;
   width: 100%;
-  height: 100vh;
+  height: 100%;
   background-color: #000;
   transform-origin: bottom;
   z-index: 11;

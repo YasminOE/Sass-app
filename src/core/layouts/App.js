@@ -22,7 +22,7 @@ export default function AppLayout({children, key}) {
   <motion.div
     className='slide-in'
     initial={{top: 0}}
-    animate={{top: "-100vh"}}
+    animate={{top: "-100%"}}
     exit={{top: 0}}
     transition={{ duration: 1.6, ease: [0.22, 1, 0.36, 1], delay: 1.5}}
     key='slide-in'
