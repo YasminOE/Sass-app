@@ -83,7 +83,7 @@ a {
 }
 img {
   display: block;
-  max-width: 100%;
+  width: 100%;
 }
 h1.h1-smaller {
   font-size: 4rem;
