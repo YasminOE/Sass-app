@@ -11,6 +11,13 @@ body {
   background: #e9e8e0;
   /* background: black; */
 }
+
+::selection {
+  background-color: #e5dbdc;
+  color: #000;
+  text-shadow: none;
+}
+
 a {
   color: inherit;
   text-decoration: inherit;
