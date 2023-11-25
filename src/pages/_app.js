@@ -33,7 +33,7 @@ export default function App({ Component, pageProps }) {
     initialSession={pageProps.initialSession}
   >
 
-    <AppLayout key={router.pathname} >
+    <AppLayout >
       <Component {...pageProps} />
     </AppLayout>
 

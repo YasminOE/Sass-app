@@ -6,13 +6,13 @@ import Logo from '/src/core/components/Logo.js'
 
 const hideNavbarPages = ['/success', '/login']
 
-export default function AppLayout({children, key}) {
+export default function AppLayout({children}) {
   const router = useRouter();
 
   const hideNavbar = hideNavbarPages.includes(router.asPath)
   return <>
 
-     <motion.div key={key}
+     <motion.div key={router.pathname}
 >   
      <Meta />
     {hideNavbar ? null : <Navbar/>}

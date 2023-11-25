@@ -30,7 +30,7 @@ export default function ProductPage({product}) {
   // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [supabaseClient])
 
-  console.log(productContent)
+  // console.log(productContent)
 
   return (
     <section className="product-section ">
