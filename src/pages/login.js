@@ -11,8 +11,8 @@ import login from "public/assets/login.png"
 export default function LoginPage() {
   const [submitted, setSubmitted] = useState('')
   return (
-    <div className="grid-halves h-screen">
-      <div className="border-right ">
+    <div className="grid-halves h-screen login">
+      <div className="border-right first-child">
         <div className="column-padding">
           <div className="tablet-centered">
             <Link href="/" className="logo-container">
@@ -23,7 +23,7 @@ export default function LoginPage() {
           </div>
         </div>
       </div>
-      <div className="border-right">
+      <div className="border-right second-child">
       {/* <div className="bg-offwhite border-right"> */}
       <div className="column-padding">
         <Image src={login} alt="Login page image" className="callout-image" />

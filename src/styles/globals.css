@@ -858,7 +858,7 @@ article.product > section > section {
     margin: 0 auto;
     padding: 4rem;
     /* added the transform to center to section */
-    transform: translate(0%, 10%);
+    transform: translate(0%, 5%);
   }
 }
 
@@ -1272,16 +1272,24 @@ input:checked + .slider:before {
 /* ---------------------- pages structure on smaller screens --------------------------- */
 
 @media screen and (max-width: 991px) {
-  .home .second-child {
+  .home .second-child,
+  .login .second-child {
     display: none;
     height: 0;
   }
-  .home .first-child {
+  .home .first-child,
+  .login.first-child {
     /* background-color: #e2442f; */
     height: 100%;
   }
-  .home .first-child .column-padding {
+  .home .first-child .column-padding,
+  .login .first-child .column-padding {
     /* background-color: rebeccapurple; */
     height: 100%;
+  }
+
+  article.product {
+    /* background: red; */
+    height: 100vh;
   }
 }
