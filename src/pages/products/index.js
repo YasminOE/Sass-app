@@ -66,7 +66,7 @@ export default function ProductsPage({products}) {
         {/* <div className="section-intro"> */}
           <div className="marquee">
             <div className="marquee-inner">
-        {Array.from({ length: 9 }, (_, index) => (
+        {Array.from({ length: 20 }, (_, index) => (
           <div className="marquee-part" key={index}>
             <h1 className="h1-smaller">Monthly</h1>
             <h1 className="h1-smaller">Newsletters</h1>
