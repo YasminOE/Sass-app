@@ -1268,3 +1268,20 @@ input:checked + .slider:before {
   transform-origin: bottom;
   z-index: 11;
 }
+
+/* ---------------------- pages structure on smaller screens --------------------------- */
+
+@media screen and (max-width: 991px) {
+  .home .second-child {
+    display: none;
+    height: 0;
+  }
+  .home .first-child {
+    /* background-color: #e2442f; */
+    height: 100%;
+  }
+  .home .first-child .column-padding {
+    /* background-color: rebeccapurple; */
+    height: 100%;
+  }
+}

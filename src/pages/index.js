@@ -12,8 +12,8 @@ export default function HomePage() {
 
   return (
     <Page>
-  <div className="grid-halves h-screen-navbar">
-    <div className="border-right">
+  <div className="grid-halves h-screen-navbar home">
+    <div className="border-right first-child">
       <div className="column-padding">
         <div className="tablet-centered">
 
@@ -41,7 +41,7 @@ export default function HomePage() {
         </div>
       </div>
     </div>
-    <div >
+    <div  className="second-child">
     { session ? (
   <div className="centered">
   <div className="callout-wrap">
@@ -50,7 +50,7 @@ export default function HomePage() {
   </div>
 </div>
           )  : (
-            <div className="centered">
+            <div className="second-child centered">
             <div className="callout-wrap">
               <Image src={hero} placeholder="empty" className="callout-image" alt="hero img"></Image>
     
