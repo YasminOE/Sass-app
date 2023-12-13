@@ -1256,6 +1256,7 @@ input:checked + .slider:before {
   background-color: #e5dbdc;
   transform-origin: top;
   z-index: 11;
+   pointer-events: none;
 }
 
 .slide-out {
@@ -1267,6 +1268,7 @@ input:checked + .slider:before {
   background-color: #000;
   transform-origin: bottom;
   z-index: 11;
+   pointer-events: none;
 }
 
 /* ---------------------- pages structure on smaller screens --------------------------- */
